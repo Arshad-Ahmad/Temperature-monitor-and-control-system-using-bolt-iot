@@ -1,6 +1,6 @@
 from boltiot import Bolt, Sms
 import warning
-import telegram_bot
+import telegram_alert
 
 
 a_key = "607bfc05-098d-4571-80b3-9644261c0b30"
@@ -66,6 +66,6 @@ def Mail_alert():
 if __name__ == '__main__' :
     if temp > max_limit or temp < min_limit :
         warning()
-        telegram_bot()
+        telegram_alert()
         Mail_alert()
         SMS_alert()
